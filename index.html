@@ -1,0 +1,297 @@
+<!DOCTYPE html> <!-- DOCTYPE = sirve para indicar la version de HTML, que vamos a emplear en este caso la version 5-->
+<html lang="es">
+<head>
+    <!-- 
+        En el head se coloca la informacion, que va a utilizar el navegador
+        Indica al navegador como se va a presentar la informacion
+        Permite especificar metadatos, que es una configuracion para la infornacion
+    -->
+
+    <!-- Activo caracteres especiales -->
+    <meta charset="UTF-8"> 
+    <!-- Sirve para hacer mas grande el contenido cuando utilice un smartphone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- title = sirve para dar titulo a la pestaña del navegador -->
+    <title>Bienvenido</title>
+</head>
+<body>
+    <!-- Body = se presenta informacion para el usuario-->
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Subtitulo 1</h3>
+    <h4>Subtitulo 2</h4>
+    <h5>Subtitulo 3</h5>
+    <h6>Subtitulo 4</h6>
+
+    <hr> <!-- Etiqueta para linea-->
+    <h1>Etiquetas para Transformacion del Texto</h1>
+    
+    <h2>Etiquetas para negrita (strong - b)</h2>
+
+    <strong>Esto es un texto que esta en negrita, 
+        utilizando la etiqueta strong
+    </strong>
+
+    <b>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </b>
+
+    <h2>Etiquetas para cursiva (i - em)</h2>
+    <i>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </i>
+
+    <p>
+        <em>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </em>
+    </p>
+
+    <h2>Etiquetas para subrayado (u - ins)</h2>
+
+    <u>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </u>
+
+    <ins>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </ins>
+
+    <h2>Etiquetas para tachado (del - s - strike)</h2>
+
+    <del>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </del>
+
+    <s>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </s>
+
+    <strike>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga placeat voluptatum perspiciatis doloremque fugiat dolor, 
+            voluptatem sit accusamus corporis ipsam nisi eveniet praesentium expedita. Facilis 
+            cumque est officia aliquam similique!
+        </p>
+    </strike>
+
+    <hr>
+
+    <h1>Etiquetas para listado (ul - ol)</h1>
+
+    <b>Ingredientes:</b>
+    <ul>
+        <li>Harina</li>
+        <li>Canela</li>
+        <li>Pimienta</li>
+        <li>Cebolla</li>
+    </ul>
+
+    <b>Listado:</b>
+    <ol>
+        <li>Diego</li>
+        <li>Jose</li>
+        <li>Maria</li>
+        <li>David</li>
+    </ol>
+
+    <h1>Etiquetas para multimedia (img - audio - video) </h1>
+ 
+    <h3>Audio</h3>
+
+    <p>La etiqueta de audio permite 3 archivos, los cuales son: mp3, ogg, wav</p>
+    
+    <audio controls src="/recursos/multimedia/musica.mp3">
+    </audio>
+    
+    <br><br>
+
+    <h3>Etiqueta de Video (video)</h3>
+
+    <p>La etiqueta video permite 3 archivos, los cuales son: mp4, ogg, webm</p>
+    
+    <video width="800" controls muted loop>
+        <source src="recursos/multimedia/audio.mp4"/>
+    </video>
+
+    <h3>Imagenes</h3>
+
+    <p>La etiqueta de imagen (img) acepta archivos con extencion .jpg, .png y .gif</p>
+
+    <img width="500" src="recursos/multimedia/mascota.gif" alt="No se encuentra el recurso">
+
+    <img width="500" src="recursos/multimedia/imagenReducida.jpg" alt="No se encuentra el recurso">
+
+    <hr>
+
+    <h1>Tabla</h1>
+    <p>La etiqueta para tabla <b>table</b>, consta de 2 partes principales la cabeza <b>thead</b> y el 
+        cuerpo <b>tbody</b>. Para las filas ocupamos la etiqueta <b>tr</b> y para las columnas tenemos
+        2 etiquetas, <b>th</b> para columna de cabeza y <b>td</b> para columna de cuerpo
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cédula</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lidia</td>
+                <td>Alejandro</td>
+                <td>1900768522</td>
+                <td><img width="100" src="recursos/multimedia/imagenReducida.jpg"></td>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>Jimenez</td>
+                <td>1900764532</td>
+                <td><img width="100" src="recursos/multimedia/mascota.gif"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+    <h1>Vínculo o enlace (a)</h1>
+    <p>La etiqueta para vinculo es la <b>a</b>, que tiene la propiedad importante para especificar el recurso al cual se va a acceder, esta propiedad es el <b>href</b>
+    </p>
+
+    <a id="vinculo1" href="pagina1.html">Ir a la página 1</a>
+
+    <a href="pagina1.html"><img width="30px" height="30px" src="recursos/multimedia/imagenReducida.jpg" alt=""></a>
+
+    <hr>
+
+    <h1>Formularios</h1>
+    <p>Para especificar el uso de un formulario utilizamos la etiqueta <b>form</b>, esta
+        etiqueta tiene 2 propiedades importantes las cuales son:
+    </p>
+    <ul>
+        <li><b>action:</b> Permite especificar hacia donde, se van a enviar los datos del formulario.
+        Puede ser otra página o la misma página</li>
+        <li><b>method:</b> Permite especificar como se van a enviar los datos, es decir,
+        visibles para el usuario mediante el metodo <b>get</b> o invisibles mediante <b>post</b>.</li>
+    </ul>
+
+    <b>Propiedades de la etiqueta input - text:</b>
+
+    <ul>
+        <li><b>Readonly:</b> Se usa para que el campo solo pueda ser visto, no se manipule</li>
+        <li><b>Disabled:</b> Se usa para marcar el campo como deshabilitado</li>
+        <li><b>Maxlength:</b> Permite especificar el numero de caracteres permitidos</li>
+        <li><b>Maxlength:</b> Permite especificar un mensaje dentro del campo, que se borra
+            cuando el usuario escribe algo
+        </li>
+    </ul>
+    <form action="bienvenido.html" method="GET">
+        <h2>Etiqueta input - text</h2>
+        <label for="">Nombre:</label>
+        <br>
+        <input readonly disabled maxlength="15" type="text" name="nombre" id="nombre" placeholder="Ingrese el primer nombre">
+        <br>
+
+        <h2>Etiqueta input - radio</h2>
+
+        <label for="">Genero</label>
+        <br>
+        <input type="radio" name="genero" value="hombre">Hombre
+        <br>
+        <input type="radio" name="genero" value="mujer">Mujer
+        <br>
+
+        <h2>Etiqueta select - option</h2>
+
+        <label for="estadoCivil">Estado Civil:</label>
+        <br>
+        <select name="estadoCivil" id="estadoCivil">
+            <option value="">-- Seleccione --</option>
+            <option value="casado">Casado</option>
+            <option value="soltero">Soltero</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+        <br>
+
+        <h2>Etiqueta textarea</h2>
+
+        <label for="descripcion">Describase:</label>
+        <br>
+        <textarea name="descripcion" id="descripcion" cols="10" rows="3"></textarea>
+        <br>
+
+        <h2>Etiqueta input - password</h2>
+
+        <label for="clave">Clave</label>
+        <br>
+        <input type="password" name="clave" id="clave">
+        <br>
+
+        <h2>Etiqueta input - checkbox</h2>
+
+        <label for="">Colores:</label>
+        <input type="checkbox" value="rojo">Rojo
+        <input type="checkbox" value="negro">Negro
+        <input type="checkbox" value="azul">Azul
+    
+        <h2>Etiqueta input - color</h2>
+    
+        <label for="color">Seleccione color de fondo:</label>
+        <input type="color" id="color" name="color">
+        <br>
+
+        <h2>Etiqueta input - date</h2>
+        <label for="fecha">Ingrese fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha">
+        <br>
+    
+        <h2>Etiqueta input - email</h2>
+        <label for="email">Ingrese su correo:</label>
+        <input type="email" id="email" name="email">
+        <br>
+    
+        <h2>Etiqueta input - number</h2>
+        <label for="dia">Ingrese su dia de nacimiento:</label>
+        <input type="number" id="dia" name="dia">
+        <br>
+
+        <h2>Etiqueta input - rango</h2>
+        <label for="rango">Ingrese un rango:</label>
+        <input type="range" id="rango" name="rango">
+        <br>
+
+        <h2>Etiqueta input - file</h2>
+        <label for="fichero">Seleccione un archivo</label>
+        <input type="file" id="fichero" name="fichero">
+
+    </form>
+</body>
+</html>

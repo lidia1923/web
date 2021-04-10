@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="home">
+        <h1>Introducción a CSS</h1>
+        <p>CSS (Cascading Style Sheet) Hojas de estilo en cascada, es un lenguaje que define
+            la apariencia de un documento HTML. Es decir; permite mejorar la presentación 
+            de nuestro contenido.
+        </p>
+        <br>
+        <strong>Formas de colocar CSS a un documento HTML:</strong>
+        <ol>
+            <li><b>Forma 1:</b> Mediante la <b>propiedad</b> style directamente en las etiquetas
+                html.
+            </li>
+            <li><b>Forma 2:</b> Mediante la <b>etiqueta</b> style que se puede colocar en cualquier
+                parte del documento HTML, por lo general se coloca en el HEAD o al inicio del BODY.
+            </li>
+            <li><b>Forma 3:</b> Mediante la utilizacion de un <b>archivo externo</b> con extension .css,
+                para lo cual empleamos la etiqueta <b>link</b> que tiene a su vez dos propiedades importantes el rel que sirve
+                para especificar el tipo de documento en este caso <b>StyleSheet</b> y la propiedad href que sirve para especificar
+                la ubicacion del archivo externo.
+            </li>
+        </ol>
+    </section>
+
+    <section id="seccion2">
+        <h1 style="text-align: center;">Alineado del texto</h1>
+        
+        <p style="text-align: left;">Este parrafo esta alineado a la izquierda</p>
+        
+        <p style="text-align: right ;">Este parrafo esta alineado a la derecha</p>
+
+        <p style="text-align: center ;">Este parrafo esta alineado al centro</p>
+
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quos recusandae optio voluptatum sequi minima velit neque
+            accusamus assumenda, ab rerum sint deserunt esse ut tempora iste? Dolorum pariatur consequatur ea voluptate. Facere suscipit 
+            harum nihil cupiditate deserunt eum iure sint explicabo tempore vitae? Ad numquam fugiat inventore nisi eligendi?
+        </p>
+
+        <h2 style="letter-spacing: 20px; text-align: right;">LETRAS CON ESPACIO</h2>
+    
+    </section>
+
+    <section id="seccion3">
+        <h1 style="text-align: center;">Transformacion de texto</h1>
+        
+        <p style="font-weight: bold;">Este parrafo esta en negrita mediante el estilo font-weight: bold</p>
+    
+        <p style="font-style: italic;">Este parrafo esta en cursiva mediante el estilo font-style: italic</p>
+   
+        <p style="text-decoration: line-through;">Este parrafo esta tachado mediante el estilo text-decoration: line-through</p>
+    
+        <p style="text-decoration: underline;">Este parrafo esta subrayado mediante el estilo text-decoration: underline</p>
+    
+        <p style="text-decoration: overline;">Este parrafo esta subrayado en la parte superior mediante el estilo text-decoration: overline</p>
+    </section>
+    
+    <section id="seccion4">
+        <h1 style="text-align: center;">Color de texto y color de fondo</h1>
+
+        <p style="color: red;">Este parrafo tiene color de texto mediante el estilo color y el valor "nombre del color"</p>
+        <p style="color: rgb(49, 176, 106)">Este parrafo tiene color de texto mediante la propiedad color y el valor rgb(red-green-blue),
+            el rango para rgb va desde 0 - 255
+        </p>
+        <p style="color: #9A33FF;">Este parrafo tiene color de texto mediante la propiedad color y el hexadecimal,
+            para colocar este valor se debe empezar por #, existen 2 formas de colocar estos valores,
+            mediante #RRGGBB o la forma abreviada que seria #rgb. Los valores permitidos son (0-9) y (A-F) o (a-f)
+        </p>
+
+        <p style="color: #9ae;">
+            Parrafo con color en hexadecimal abreviado, es decir; #rgb
+        </p>
+
+        <p style="background: greenyellow;">Este parrafo tiene color de fondo mediante la propiedad background y el valor "nombre del color"</p>
+        
+        <p style="background: rgb(153, 3, 3);">Este parrafo tiene color de fondo mediante el background y el valor rgb</p>
+        
+        <p style="background: rgba(153, 3, 3, 0.5);">Este parrafo tiene color de fondo empleando el valor rgba, donde la (a) significa alpha
+            que va relacionado a la transparencia y los valores permitidos van de 0 a 1.
+        </p>
+        
+        <div style="background: blue;width: 300px;height: 200px;">
+            <p style="color: white;">
+                Este es un bloque que tiene ancho y alto y esta con color de fondo
+            </p>
+        </div>
+    </section>
+</body>
+</html>
